@@ -18,6 +18,4 @@ echo "@paralenz:registry=https://npm.pkg.github.com/" > .npmrc
 ```
 
 ## Colors
-<!-- START ./template/colors.md -->
-
-<!-- END ./template/colors.md -->
+<\!-- include template/colors.md --> 
