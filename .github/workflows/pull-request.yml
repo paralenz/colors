@@ -33,6 +33,8 @@ jobs:
 
           cat README.md
 
+          git config --global user.email "app@paralenz.com"
+          git config --global user.name "Luke Sky"
           git add .
           git commit -m "Update readme.md"
           git push origin HEAD:setup
