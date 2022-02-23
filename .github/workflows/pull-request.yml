@@ -26,7 +26,7 @@ jobs:
       - name: Build
         run: yarn build
       - name: Run colors script
-        run: node dist/add-colors-to-readme.md
+        run: node dist/add-colors-to-readme.js
       # - name: "💫  Dynamic Template Render"
       #   uses: varunsridharan/action-dynamic-readme@main
       #   with:
