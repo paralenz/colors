@@ -27,18 +27,9 @@ jobs:
         run: yarn build
       - name: Run colors script
         run: node dist/add-colors-to-readme.js
-      - name: "💫  Dynamic Template Render"
+      - name: Update readme.md
         run: | 
-          OUTPUT=$(node ./dist/add-colors-to-readme.js)
-          echo "$OUTPUT"
-          sed -e "s|%colors%|${OUTPUT}|i" templates/readme.md 
-          sed -e "s|%colors%|${OUTPUT}|i" templates/readme.md | tee README.md
-      - name: Commit and push change
-        uses: EndBug/add-and-commit@v8
-        with:
-          default_author: github_actions
-          add: .
-          message: 📝 Update documentation
+          node ./dist/add-colors-to-readme.js > README.md
       - name: Commit changes
         uses: EndBug/add-and-commit@v8
         with:
