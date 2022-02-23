@@ -28,16 +28,11 @@ jobs:
       - name: Run colors script
         run: node dist/add-colors-to-readme.js
       - name: "💫  Dynamic Template Render"
-        uses: varunsridharan/action-dynamic-readme@main
-        with:
-          files: |
-            template/colors.md
-          committer_name: github-actions[bot]
-          committer_email: github-actions[bot]@users.noreply.github.com
-          commit_message: 'docs: update readme file [skip ci]'
-          confirm_and_push: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: | 
+          $OUTPUT=$(node ./dist/add-colors-to-readme.js)
+          echo "$OUTPUT"
+          sed -e "s|%colors%|${OUTPUT}|i" templates/readme.md 
+          sed -e "s|%colors%|${OUTPUT}|i" templates/readme.md | tee README.md
       - name: Commit and push change
         uses: EndBug/add-and-commit@v8
         with:
