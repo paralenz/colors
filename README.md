@@ -1,5 +1,18 @@
-This is a template to unify how to create a new package by the paralenz development team.
+# @paralenz/colors
+<!-- Please add a description here -->
 
-Create a new repo and select to use this template.
+## Installation
+Yarn:
+```sh
+yarn add @paralenz/colors
+```
+npm:
+```sh
+npm install @paralenz/colors
+```
 
-When you have cloned the new repo run `sh setup` to setup the workflows, dependabot and package.json
+## Prerequisites
+You will need to have a `.npmrc` file in your project that tells npm to use the github package registry
+```sh
+echo "@paralenz:registry=https://npm.pkg.github.com/" > .npmrc
+```
