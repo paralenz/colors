@@ -25,3 +25,13 @@ jobs:
         run: yarn test --passWithNoTests
       - name: Build
         run: yarn build
+      - name: Run colors script
+        run: node dist/add-colors-to-readme.md
+      - name: "💫  Dynamic Template Render"
+        uses: varunsridharan/action-dynamic-readme@main
+        with:
+          files: |
+            template/colors.md
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
