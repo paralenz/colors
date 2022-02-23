@@ -16,3 +16,8 @@ You will need to have a `.npmrc` file in your project that tells npm to use the 
 ```sh
 echo "@paralenz:registry=https://npm.pkg.github.com/" > .npmrc
 ```
+
+## Colors
+<!-- START ./template/colors.md -->
+
+<!-- END ./template/colors.md -->
