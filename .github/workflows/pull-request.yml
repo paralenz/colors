@@ -29,7 +29,7 @@ jobs:
         run: node dist/add-colors-to-readme.js
       - name: "💫  Dynamic Template Render"
         run: | 
-          $OUTPUT=$(node ./dist/add-colors-to-readme.js)
+          OUTPUT=$(node ./dist/add-colors-to-readme.js)
           echo "$OUTPUT"
           sed -e "s|%colors%|${OUTPUT}|i" templates/readme.md 
           sed -e "s|%colors%|${OUTPUT}|i" templates/readme.md | tee README.md
