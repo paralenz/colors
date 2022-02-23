@@ -32,9 +32,14 @@ jobs:
           node ./dist/add-colors-to-readme.js > README.md
 
           cat README.md
-      - name: Commit changes
-        uses: EndBug/add-and-commit@v8
-        with:
-          default_author: github_actions
-          add: .
-          message: 📝 Update readme.md
+
+          git add .
+          git commit -m "Update readme.md"
+          git push origin HEAD:setup
+
+      # - name: Commit changes
+      #   uses: EndBug/add-and-commit@v8
+      #   with:
+      #     default_author: github_actions
+      #     add: .
+      #     message: 📝 Update readme.md
