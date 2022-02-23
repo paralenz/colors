@@ -19,19 +19,19 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
         with:
           token: ${{ secrets.NPM_AUTH_TOKEN }}
-      - name: Run linting
-        run: yarn lint
-      - name: Run tests
-        run: yarn test --passWithNoTests
+      # - name: Run linting
+      #   run: yarn lint
+      # - name: Run tests
+      #   run: yarn test --passWithNoTests
       - name: Build
         run: yarn build
-      - name: Run colors script
-        run: node dist/add-colors-to-readme.md
-      - name: "💫  Dynamic Template Render"
-        uses: varunsridharan/action-dynamic-readme@main
-        with:
-          files: |
-            template/colors.md
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Run colors script
+      #   run: node dist/add-colors-to-readme.md
+      # - name: "💫  Dynamic Template Render"
+      #   uses: varunsridharan/action-dynamic-readme@main
+      #   with:
+      #     files: |
+      #       template/colors.md
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
