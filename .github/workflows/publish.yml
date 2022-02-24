@@ -18,13 +18,13 @@ jobs:
         run: yarn test --passWithNoTests
       - name: Run build
         run: yarn build
-      - name: Update readme.md
-        run: yarn make:readme > README.md
+      - name: Update README.md
+        run: yarn make:readme
       - name: Commit changes
         uses: EndBug/add-and-commit@v8
         with:
           default_author: github_actions
           add: .
-          message: 📝 Update readme.md
+          message: 📝 Update README.md
       - name: Publish
         run: yarn publish
