@@ -5,7 +5,7 @@ import { join } from 'path'
 // console.log(colors);
 
 const generateTableRow = (name: string, hex: string) => {
-  return `| ${name} | ![](https://via.placeholder.com/15/${hex}/000000?text=+) ${hex}  |`
+  return `| ${name} | ![](https://via.placeholder.com/15/${hex.replace('#', '')}?text=+) ${hex}  |`
 }
 
 const res = `| Name | Color |
