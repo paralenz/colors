@@ -17,30 +17,12 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.ref }}
       - uses: paralenz/actions/setup-node@master
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
         with:
           token: ${{ secrets.NPM_AUTH_TOKEN }}
-      # - name: Run linting
-      #   run: yarn lint
-      # - name: Run tests
-      #   run: yarn test --passWithNoTests
+      - name: Run linting
+        run: yarn lint
+      - name: Run tests
+        run: yarn test --passWithNoTests
       - name: Build
         run: yarn build
-      - name: Run colors script
-        run: node dist/add-colors-to-readme.js
-      - name: Update readme.md
-        run: | 
-          node ./dist/add-colors-to-readme.js > README.md
-
-          cat README.md
-
-          git status
-
-
-      - name: Commit changes
-        uses: EndBug/add-and-commit@v8
-        with:
-          default_author: github_actions
-          add: .
-          message: 📝 Update readme.md
+      

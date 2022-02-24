@@ -1,14 +1,14 @@
 {
   "name": "@paralenz/colors",
   "version": "0.0.1",
-  "description": "",
+  "description": "Colors used by the Paralenz development team",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "private": true,
   "scripts": {
     "lint": "eslint --ext .ts",
     "test": "jest",
-    "build": "tsc"
+    "build": "tsc",
+    "make:readme": "node ./scripts/generate-readme.js"
   },
   "homepage": "https://github.com/paralenz/colors",
   "repository": {

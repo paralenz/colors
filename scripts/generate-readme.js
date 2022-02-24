@@ -1,10 +1,8 @@
-#!/usr/bin/env node
-import { colors } from './index'
-import { readFileSync } from 'fs'
-import { join } from 'path'
-// console.log(colors);
+const { colors } = require( '../dist/index')
+const { readFileSync } = require('fs')
+const { join } = require('path')
 
-const generateTableRow = (name: string, hex: string) => {
+const generateTableRow = (name, hex) => {
   return `| ${name} | ![](https://via.placeholder.com/15/${hex.replace('#', '')}?text=+) \`${hex}\`  |`
 }
 
