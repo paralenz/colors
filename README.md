@@ -1,5 +1,7 @@
+yarn run v1.22.17
+$ node ./scripts/generate-readme.js
 # @paralenz/colors
-<!-- Please add a description here -->
+Colors used by the Paralenz development team
 
 ## Installation
 Yarn:
@@ -44,3 +46,4 @@ echo "@paralenz:registry=https://npm.pkg.github.com/" > .npmrc
 | sessionDot | ![](https://via.placeholder.com/15/ffc116?text=+) `#ffc116`  |
 | destroy | ![](https://via.placeholder.com/15/e74c3c?text=+) `#e74c3c`  |
 | transparent | ![](https://via.placeholder.com/15/transparent?text=+) `transparent`  |
+Done in 0.16s.
