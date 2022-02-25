@@ -1,6 +1,6 @@
 {
   "name": "@paralenz/colors",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Colors used by the Paralenz development team",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -9,7 +9,7 @@
     "test": "jest",
     "build": "tsc",
     "make:readme": "node ./scripts/generate-readme.js",
-    "postinstall": "node ./dist/generate-scss.js"
+    "postinstall": "node ./dist/postinstall.js"
   },
   "homepage": "https://github.com/paralenz/colors",
   "repository": {
