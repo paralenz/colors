@@ -1,11 +1,11 @@
-import { colors } from './index'
 import fs from 'fs'
 import path from 'path'
-import { toKebabCase } from './toKebabCase'
+import slug from 'slugify'
+import { colors } from './index'
 
 const variableNames = Object.keys(colors).map((name: string) => {
   // @ts-expect-error ignore this
-  return `${toKebabCase(name)}: ${colors[name]};`
+  return `${slug(name, { trim: true })}: ${colors[name]};`
 })
 
 const makeScss = () => {

@@ -1,26 +1,2 @@
-export const colors = {
-  crabRed: '#681603',
-  oceanGreen: '#203033',
-  oceanBlue: '#152228',
-  coral: '#ff604c',
-  turquoise: '#a5d7b7',
-  lagoon: '#6787b7',
-  deepRed: '#440706',
-  deepGreen: '#131d1e',
-  deepSea: '#000000',
-  pirateYellow: '#e9ff6b',
-  shrimp: '#ffc6c2',
-  lightTurquoise: '#e6f3e6',
-  aqua: '#c3d7ee',
-  white: '#ffffff',
-  black: '#000000',
-  rentalStateAvailable: '#abff57',
-  rentalStateHandedOut: '#e2e2e2',
-  rentalStateRented: '#579aff',
-  rentalStateHandedIn: '#ff575c',
-  rentalStateUnlocked: '#9DBEF1',
-  rentalStateUploaded: '#a6dc91',
-  sessionDot: '#ffc116',
-  destroy: '#e74c3c',
-  transparent: 'transparent'
-}
+export * from './colors'
+export * from './mix-colors'
