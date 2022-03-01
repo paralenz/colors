@@ -22,5 +22,6 @@ export const colors = {
   rentalStateUploaded: '#a6dc91',
   sessionDot: '#ffc116',
   destroy: '#e74c3c',
+  seafoam: '#ccebe0',
   transparent: 'transparent'
 }
