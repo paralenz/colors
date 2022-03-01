@@ -1,10 +1,11 @@
 const { colors } = require( '../dist/index')
 const { readFileSync, writeFileSync } = require('fs')
 const { join } = require('path')
-const { toKebabCase } = require('../dist/toKebabCase')
+const slug = require('slugify')
 
 const generateTableRow = (name, hex) => {
-  return `| ${name} | ![](https://via.placeholder.com/15/${hex.replace('#', '')}?text=+) \`${hex}\`  | var(--${toKebabCase(name)}) | $${toKebabCase(name)} |`
+  const vars = `${slug(name)}) | $${slug(name)}`
+  return `| ${name} | ![](https://via.placeholder.com/15/${hex.replace('#', '')}?text=+) \`${hex}\`  | var(--${vars} |`
 }
 
 const res = `| Name | Color | Css | Scss |
