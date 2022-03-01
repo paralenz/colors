@@ -43,4 +43,5 @@ echo "@paralenz:registry=https://npm.pkg.github.com/" > .npmrc
 | rentalStateUploaded | ![](https://via.placeholder.com/15/a6dc91?text=+) `#a6dc91`  | var(--rentalStateUploaded) | $rentalStateUploaded |
 | sessionDot | ![](https://via.placeholder.com/15/ffc116?text=+) `#ffc116`  | var(--sessionDot) | $sessionDot |
 | destroy | ![](https://via.placeholder.com/15/e74c3c?text=+) `#e74c3c`  | var(--destroy) | $destroy |
+| seafoam | ![](https://via.placeholder.com/15/ccebe0?text=+) `#ccebe0`  | var(--seafoam) | $seafoam |
 | transparent | ![](https://via.placeholder.com/15/transparent?text=+) `transparent`  | var(--transparent) | $transparent |
