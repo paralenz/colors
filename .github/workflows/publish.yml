@@ -15,7 +15,7 @@ jobs:
       - name: Run linting
         run: yarn lint
       - name: Run tests
-        run: yarn test --passWithNoTests
+        run: yarn test
       - name: Run build
         run: yarn build
       - name: Update README.md
