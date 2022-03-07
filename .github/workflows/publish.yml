@@ -8,14 +8,14 @@ jobs:
     name: Publish
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: paralenz/actions/setup-node@master
         with:
           token: ${{ secrets.NPM_AUTH_TOKEN }}
       - name: Run linting
         run: yarn lint
       - name: Run tests
-        run: yarn test --passWithNoTests
+        run: yarn test
       - name: Run build
         run: yarn build
       - name: Update README.md
