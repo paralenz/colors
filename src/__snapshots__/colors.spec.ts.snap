@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`colors should match snapshot 1`] = `
+Object {
+  "aqua": "#c3d7ee",
+  "black": "#000000",
+  "coral": "#ff604c",
+  "crabRed": "#681603",
+  "deepGreen": "#131d1e",
+  "deepRed": "#440706",
+  "deepSea": "#000000",
+  "destroy": "#e74c3c",
+  "lagoon": "#6787b7",
+  "lightTurquoise": "#e6f3e6",
+  "oceanBlue": "#152228",
+  "oceanGreen": "#203033",
+  "pirateYellow": "#e9ff6b",
+  "rentalStateAvailable": "#abff57",
+  "rentalStateHandedIn": "#ff575c",
+  "rentalStateHandedOut": "#e2e2e2",
+  "rentalStateRented": "#579aff",
+  "rentalStateUnlocked": "#9DBEF1",
+  "rentalStateUploaded": "#a6dc91",
+  "seafoam": "#ccebe0",
+  "sessionDot": "#ffc116",
+  "shrimp": "#ffc6c2",
+  "transparent": "transparent",
+  "turquoise": "#a5d7b7",
+  "white": "#ffffff",
+}
+`;
