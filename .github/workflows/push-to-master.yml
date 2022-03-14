@@ -1,15 +1,14 @@
-name: Publish
+name: Push to master
 on:
   push:
     branches:
       - master
 jobs:
-  publish:
-    name: Publish
+  main:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: paralenz/actions/setup-node@master
+      - uses: paralenz/actions/setup-node@v1.2.3
         with:
           token: ${{ secrets.NPM_AUTH_TOKEN }}
       - name: Run linting
@@ -21,10 +20,12 @@ jobs:
       - name: Update README.md
         run: yarn make:readme
       - name: Commit changes
-        uses: EndBug/add-and-commit@v8
+        uses: EndBug/add-and-commit@v9
         with:
           default_author: github_actions
           add: .
           message: 📝 Update README.md
+      - name: Tag and Release
+        uses: paralenz/actions/make-release@v1.2.3
       - name: Publish
         run: yarn publish
