@@ -34,3 +34,8 @@ docker-compose.override.yml
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+
+index.css
+_index.scss
+colors.xml

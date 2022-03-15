@@ -25,7 +25,7 @@ jobs:
           default_author: github_actions
           add: .
           message: 📝 Update README.md
-      - name: Tag and Release
-        uses: paralenz/actions/make-release@v1.2.3
       - name: Publish
         run: yarn publish
+      - name: Tag and Release
+        uses: paralenz/actions/make-release@v1.2.3
