@@ -9,7 +9,7 @@
     "test": "jest",
     "build": "tsc",
     "make:readme": "node ./scripts/generate-readme.js",
-    "postinstall": "patch-package && node ./dist/generate-files.js"
+    "postinstall": "node ./dist/generate-files.js"
   },
   "homepage": "https://github.com/paralenz/colors",
   "repository": {
@@ -26,18 +26,16 @@
     "node": ">= 16"
   },
   "devDependencies": {
-    "@paralenz/eslint-config-typescript-react": "^1.0.7",
+    "@paralenz/eslint-config-typescript-react": "^1.1.0",
     "@types/color": "^3.0.3",
     "@types/jest": "^27.4.1",
     "jest": "^27.5.1",
-    "postinstall-postinstall": "^2.1.0",
     "ts-jest": "^27.1.4",
     "ts-node": "^10.7.0",
     "typescript": "^4.6.3"
   },
   "dependencies": {
     "color": "^4.2.3",
-    "patch-package": "^6.4.7",
     "slugify": "^1.6.5"
   }
 }
